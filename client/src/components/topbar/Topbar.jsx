@@ -1,15 +1,18 @@
 import "./topbar.css"
 import { Search, Person, Chat, Notifications } from "@mui/icons-material"
+import { Link } from "react-router-dom"
 
 export default function Topbar() {
     return (
         <div className="topbarContainer">
             <div className="topbarLeft">
-                <span className="logo">LamaSocial</span>
+                <Link to='/' style={{textDecoration: "none"}}>
+                    <span className="logo">Chatify</span>
+                </Link>
             </div>
             <div className="topbarCenter">
                 <div className="searchbar">
-                    <Search className="searchIcon"/>
+                    <Search className="searchIcon" />
                     <input type placeholder="Search for Friends or Posts!" className="searchInput" />
                 </div>
             </div>
