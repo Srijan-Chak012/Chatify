@@ -5,6 +5,7 @@ import Topbar from "../../components/topbar/Topbar";
 import "./home.css";
 
 export default function Home() {
+    // window.location.reload(false);
     return (
         <>
             <Topbar />
